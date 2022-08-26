@@ -1,7 +1,7 @@
 # firefox-kde
 
 ## Clonar este repositorio:
-`$ git clone https://github.com/PabliNet/firefox-kde`
+`$ git clone https://github.com/PabliNet/firefox-kde.git`
 
 ## Ingresar al directorio «firefox-kde»:
 $ `cd firefox-kde`
