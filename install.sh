@@ -1,6 +1,10 @@
 #!/bin/bash
-[ `whoami` == root ] || echo Se necesita ser superusuario o root…
-[ ! -f $1 ] || echo El archivo no existe.
+if [[ `whoami` != root || ! -f $1 ]]
+  then
+  [ `whoami` == root ] || echo Se necesita ser superusuario o root…
+  [ -f $1 ] || echo El archivo no existe…
+  exit(1)
+fi
 newdir=/opt/firefox
 newlink=/usr/local/bin/firefox
 newscript=/usr/local/bin/firefox-kde
